@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_title_files"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/nav_files"
+        android:textColor="@color/text_pure_white"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_export_header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Header Quick Export Pill Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_export_header"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:background="@drawable/bg_glass_card"
+        android:fontFamily="sans-serif-bold"
+        android:text="@string/action_export_catalog"
+        android:textColor="@color/electric_cyan"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:cornerRadius="19dp"
+        app:icon="@drawable/ic_export"
+        app:iconSize="16dp"
+        app:iconTint="@color/electric_cyan"
+        app:strokeColor="@color/electric_cyan"
+        app:strokeWidth="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_files"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title_files" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_files"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Locally generated documents and exported images"
+        android:textColor="@color/text_light_grey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_files" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_files"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_files" />
+
+    <!-- Floating Action Button for Instant File List Export -->
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fab_export_catalog"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="84dp"
+        android:backgroundTint="@color/deep_purple"
+        android:fontFamily="sans-serif-bold"
+        android:text="@string/action_export_catalog"
+        android:textColor="@color/text_pure_white"
+        android:textSize="13sp"
+        app:elevation="12dp"
+        app:icon="@drawable/ic_export"
+        app:iconTint="@color/text_pure_white"
+        app:strokeColor="@color/electric_cyan"
+        app:strokeWidth="1.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_empty_files"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_files"
+            app:tint="@color/text_muted" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-bold"
+            android:text="@string/empty_files_title"
+            android:textColor="@color/text_pure_white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/empty_files_subtitle"
+            android:textColor="@color/text_light_grey"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Solid Deep Space Base -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/bg_deep_space" />
+        </shape>
+    </item>
+    <!-- Top-left Electric Cyan Radial Aura (15% opacity) -->
+    <item
+        android:bottom="300dp"
+        android:right="120dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="420dp"
+                android:startColor="#2600F0FF"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+    <!-- Bottom-right Deep Purple Radial Aura (15% opacity) -->
+    <item
+        android:top="350dp"
+        android:left="100dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="480dp"
+                android:startColor="#267000FF"
+                android:endColor="#00000000" />
+        </shape>
+    </item>
+</layer-list>

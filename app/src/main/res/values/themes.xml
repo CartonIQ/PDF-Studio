@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default Neon Studio (Dark) -->
+    <style name="Theme.PDFStudio" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/electric_cyan</item>
+        <item name="colorSecondary">@color/deep_purple</item>
+        <item name="android:statusBarColor">@color/bg_deep_space</item>
+        <item name="android:navigationBarColor">@color/bg_deep_space</item>
+        <item name="android:windowBackground">@drawable/bg_mesh_gradient</item>
+        <item name="android:textColorPrimary">@color/text_pure_white</item>
+        <item name="android:textColorSecondary">@color/text_light_grey</item>
+        <item name="colorSurface">@color/bg_deep_space</item>
+        <item name="colorOnSurface">@color/text_pure_white</item>
+    </style>
+
+    <!-- Neon Light Palette (White / Clean with Neon Accents) -->
+    <style name="Theme.PDFStudio.Light" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/electric_cyan_light</item>
+        <item name="colorSecondary">@color/deep_purple_light</item>
+        <item name="android:statusBarColor">@color/bg_neon_light</item>
+        <item name="android:navigationBarColor">@color/bg_neon_light</item>
+        <item name="android:windowBackground">@drawable/bg_mesh_gradient_light</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+    </style>
+</resources>

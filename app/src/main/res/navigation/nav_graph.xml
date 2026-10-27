@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_tools">
+
+    <fragment
+        android:id="@+id/navigation_tools"
+        android:name="com.pdfstudio.app.ToolsFragment"
+        android:label="@string/nav_tools"
+        tools:layout="@layout/fragment_tools">
+        <action
+            android:id="@+id/action_tools_to_preview"
+            app:destination="@id/navigation_preview"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_files"
+        android:name="com.pdfstudio.app.FilesFragment"
+        android:label="@string/nav_files"
+        tools:layout="@layout/fragment_files">
+        <action
+            android:id="@+id/action_files_to_preview"
+            app:destination="@id/navigation_preview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.pdfstudio.app.HistoryFragment"
+        android:label="@string/nav_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.pdfstudio.app.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_preview"
+        android:name="com.pdfstudio.app.PreviewFragment"
+        android:label="@string/preview_title"
+        tools:layout="@layout/fragment_preview">
+        <argument
+            android:name="filePath"
+            app:argType="string" />
+        <argument
+            android:name="toolName"
+            app:argType="string" />
+        <argument
+            android:name="hasWatermark"
+            android:defaultValue="true"
+            app:argType="boolean" />
+    </fragment>
+
+</navigation>

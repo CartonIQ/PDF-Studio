@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_glass_card"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-bold"
+        android:text="@string/dialog_create_pdf_title"
+        android:textColor="@color/text_pure_white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Type your title, notes or document text below:"
+        android:textColor="@color/text_light_grey"
+        android:textSize="13sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_doc_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:boxStrokeColor="@color/electric_cyan"
+        app:hintTextColor="@color/electric_cyan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_doc_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_pdf_title"
+            android:textColor="@color/text_pure_white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_doc_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:boxStrokeColor="@color/electric_cyan"
+        app:hintTextColor="@color/electric_cyan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_doc_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="top|start"
+            android:hint="@string/hint_pdf_content"
+            android:inputType="textMultiLine"
+            android:textColor="@color/text_pure_white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cb_add_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/electric_cyan"
+        android:checked="true"
+        android:text="Include creation timestamp in header"
+        android:textColor="@color/text_light_grey"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel_create"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_glass_card"
+            android:text="@string/dialog_cancel"
+            android:textColor="@color/text_light_grey"
+            app:backgroundTint="@null"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_generate_pdf"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:background="@drawable/bg_gradient_button"
+            android:text="@string/action_create_pdf"
+            android:textColor="@color/text_pure_white"
+            app:backgroundTint="@null"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+</LinearLayout>

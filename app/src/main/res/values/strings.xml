@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">PDF Studio</string>
+    <string name="tagline">Convert, merge, sign, and compress. 100% offline.</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_tools">Tools</string>
+    <string name="nav_files">Files</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Tools Grid -->
+    <string name="tool_image_to_pdf">Image to PDF</string>
+    <string name="tool_image_to_pdf_desc">Multi-select, reorder, and rotate photos into a high-quality PDF</string>
+    <string name="tool_pdf_creator">PDF Creator</string>
+    <string name="tool_pdf_creator_desc">Create rich formatted documents, notes, and letters from scratch</string>
+    <string name="tool_merge_pdf">Merge PDFs</string>
+    <string name="tool_merge_pdf_desc">Combine multiple documents into one</string>
+    <string name="tool_split_pdf">Split PDF</string>
+    <string name="tool_split_pdf_desc">Extract specific page ranges or singles</string>
+    <string name="tool_compress_image">Compress Image</string>
+    <string name="tool_compress_image_desc">Shrink photo size with zero visible loss</string>
+    <string name="tool_sign_pdf">Sign PDF</string>
+    <string name="tool_sign_pdf_desc">Draw custom signature onto your pages</string>
+    <string name="tool_protect_pdf">Protect PDF</string>
+    <string name="tool_protect_pdf_desc">Secure files with military-grade passwords</string>
+    <string name="tool_pdf_to_image">PDF to Image</string>
+    <string name="tool_pdf_to_image_desc">Extract crisp JPG pages from any PDF</string>
+    <string name="tool_compress_pdf">Compress PDF</string>
+    <string name="tool_compress_pdf_desc">Reduce PDF MBs for easy email attachments</string>
+
+    <!-- Preview Screen -->
+    <string name="preview_title">Document Preview</string>
+    <string name="action_save">Save to Storage</string>
+    <string name="action_share">Share File</string>
+    <string name="action_remove_watermark">Remove Watermark (Watch Ad)</string>
+    <string name="watermark_removed_msg">Watermark successfully removed!</string>
+    <string name="file_saved_msg">File saved to Downloads folder</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_create_pdf_title">Create New PDF Document</string>
+    <string name="hint_pdf_title">Document Title</string>
+    <string name="hint_pdf_content">Type or paste document content here...</string>
+    <string name="action_create_pdf">Generate PDF</string>
+    <string name="dialog_sign_title">Draw Your Signature</string>
+    <string name="dialog_clear">Clear</string>
+    <string name="dialog_apply">Apply Signature</string>
+    <string name="dialog_password_title">Enter PDF Password</string>
+    <string name="hint_password">Enter strong password</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_confirm">Confirm</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Preferences</string>
+    <string name="setting_theme_title">Neon Theme Palette</string>
+    <string name="setting_theme_desc">Switch between Neon Studio (Dark) and Neon Light (White)</string>
+    <string name="theme_neon_dark">Neon Studio (Dark)</string>
+    <string name="theme_neon_light">Neon Light (White)</string>
+    <string name="setting_watermark_title">Include Studio Watermark</string>
+    <string name="setting_watermark_subtitle">Add subtle Created with PDF Studio footer tag</string>
+    <string name="setting_about_title">About PDF Studio</string>
+    <string name="setting_about_body">v1.1.0 — Pure 100% offline toolkit engineered with PDFBox Android. No cloud uploads. Zero data leaves your device.</string>
+    <string name="setting_privacy_title">Privacy Guarantee</string>
+    <string name="setting_privacy_body">All documents remain on your local storage. We do not track or upload any files.</string>
+
+    <!-- Export Actions -->
+    <string name="action_export_catalog">Export Catalog</string>
+    <string name="dialog_export_title">Export Files Catalog</string>
+    <string name="dialog_export_subtitle">Choose your format to export or share the list of generated files:</string>
+    <string name="export_csv_title">Export CSV Spreadsheet (.csv)</string>
+    <string name="export_csv_desc">Tabular dataset containing filenames, sizes, and timestamps</string>
+    <string name="export_pdf_report">Export PDF Summary Report (.pdf)</string>
+    <string name="export_pdf_desc">Formatted document with summary metrics and file inventory</string>
+    <string name="export_success_msg">Catalog successfully exported!</string>
+    <string name="export_empty_msg">No files available to export</string>
+
+    <!-- States & Empty -->
+    <string name="empty_files_title">No Generated Files Yet</string>
+    <string name="empty_files_subtitle">Choose any tool on the Tools tab to create your first document.</string>
+    <string name="empty_history_title">No Recent Actions</string>
+    <string name="empty_history_subtitle">Your processing history will be logged here automatically.</string>
+    <string name="processing_doc">Processing Document...</string>
+    <string name="processing_success">Processing Completed Successfully!</string>
+    <string name="privacy_policy_text">Last Updated: October 2026\n\nPDF Studio (\"we\", \"our\") is committed to protecting your privacy.\n\n1. INFORMATION WE COLLECT\nWe do NOT collect, store, or share personal information. All documents and photos are processed 100% offline on your device.\n\n2. FILE ACCESS\nThe app requests storage permission solely to read images/PDFs you select and save generated files. We never upload, scan, or share your files.\n\n3. THIRD-PARTY ADS\nThis app uses Google AdMob to display ads, which may collect anonymous data (like your advertising ID) for personalization. Learn more: https://policies.google.com/technologies/partner-sites\n\n4. DATA SECURITY\nAll data stays on your device. If you uninstall, generated files in the app folder are deleted.\n\n5. CHILDREN\nOur app does not knowingly collect info from children under 13.\n\n6. CONTACT\nQuestions? Email: cartoniq.business@gmail.com\n\nBy using PDF Studio, you agree to this Privacy Policy.</string>\n</resources>
